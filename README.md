@@ -62,9 +62,12 @@ The custom 3D printed case features:
 
 ## 📡 MQTT Integration (Home Assistant)
 
-![MQTT Explorer](images/MQTT%20Explorer.png)
+![Home Assistant Dashboard](images/ha_dashboard.png)
+![Home Assistant Dashboard Printers](images/ha_dashboard_2.png)
 
 While RainMaker provides external cloud access, the W-LAB Smart Controller also features a fully independent **Local MQTT Client**. This ensures absolute reliability, privacy, and ultra-low latency integration with systems like **Home Assistant** or Node-RED, bypassing the cloud entirely for your local automations.
+
+![MQTT Explorer](images/MQTT%20Explorer.png)
 
 The controller publishes live, staggered telemetry data to the following topics:
 *   `home_lab/sensor/temperature`
@@ -77,6 +80,8 @@ It also subscribes to local command topics allowing external systems to control 
 
 And publishes its state feedback so Home Assistant switches stay perfectly in sync:
 *   `home_lab/ch[1-8]/status` (Payload: `ON`, `OFF`)
+
+> **Note for Home Assistant users:** We have provided a ready-to-use `home_assistant.yaml` file in this repository. Simply copy its contents into your HA `configuration.yaml` to instantly add all 4 sensors and 8 relays to your dashboard!
 
 ## 🛠️ Usage
 
