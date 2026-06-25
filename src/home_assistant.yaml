@@ -1,0 +1,113 @@
+# Copy and paste this into your Home Assistant configuration.yaml file
+# Or include it in your mqtt.yaml if you split your configuration
+
+mqtt:
+  sensor:
+    - name: "Lab Temperature"
+      state_topic: "home_lab/sensor/temperature"
+      unit_of_measurement: "°C"
+      device_class: temperature
+      state_class: measurement
+      icon: mdi:thermometer
+
+    - name: "Lab Humidity"
+      state_topic: "home_lab/sensor/humidity"
+      unit_of_measurement: "%"
+      device_class: humidity
+      state_class: measurement
+      icon: mdi:water-percent
+
+    - name: "Lab Pressure"
+      state_topic: "home_lab/sensor/pressure"
+      unit_of_measurement: "hPa"
+      device_class: atmospheric_pressure
+      state_class: measurement
+      icon: mdi:gauge
+
+    - name: "Lab Luminosity"
+      state_topic: "home_lab/sensor/light"
+      unit_of_measurement: "%"
+      device_class: illuminance
+      state_class: measurement
+      icon: mdi:brightness-6
+
+  switch:
+    - name: "Lab Relay 1"
+      state_topic: "home_lab/ch1/status"
+      command_topic: "home_lab/ch1/set"
+      payload_on: "ON"
+      payload_off: "OFF"
+      state_on: "ON"
+      state_off: "OFF"
+      optimistic: false
+      icon: mdi:power-socket-eu
+
+    - name: "Lab Relay 2"
+      state_topic: "home_lab/ch2/status"
+      command_topic: "home_lab/ch2/set"
+      payload_on: "ON"
+      payload_off: "OFF"
+      state_on: "ON"
+      state_off: "OFF"
+      optimistic: false
+      icon: mdi:power-socket-eu
+
+    - name: "Lab Relay 3"
+      state_topic: "home_lab/ch3/status"
+      command_topic: "home_lab/ch3/set"
+      payload_on: "ON"
+      payload_off: "OFF"
+      state_on: "ON"
+      state_off: "OFF"
+      optimistic: false
+      icon: mdi:power-socket-eu
+
+    - name: "Lab Relay 4"
+      state_topic: "home_lab/ch4/status"
+      command_topic: "home_lab/ch4/set"
+      payload_on: "ON"
+      payload_off: "OFF"
+      state_on: "ON"
+      state_off: "OFF"
+      optimistic: false
+      icon: mdi:power-socket-eu
+
+    - name: "Lab Relay 5"
+      state_topic: "home_lab/ch5/status"
+      command_topic: "home_lab/ch5/set"
+      payload_on: "ON"
+      payload_off: "OFF"
+      state_on: "ON"
+      state_off: "OFF"
+      optimistic: false
+      icon: mdi:power-socket-eu
+
+    - name: "Lab Relay 6"
+      state_topic: "home_lab/ch6/status"
+      command_topic: "home_lab/ch6/set"
+      payload_on: "ON"
+      payload_off: "OFF"
+      state_on: "ON"
+      state_off: "OFF"
+      optimistic: false
+      icon: mdi:power-socket-eu
+
+    - name: "Lab Relay 7"
+      state_topic: "home_lab/ch7/status"
+      command_topic: "home_lab/ch7/set"
+      payload_on: "ON"
+      payload_off: "OFF"
+      state_on: "ON"
+      state_off: "OFF"
+      optimistic: false
+      icon: mdi:power-socket-eu
+
+    - name: "Lab Relay 8"
+      state_topic: "home_lab/ch8/status"
+      command_topic: "home_lab/ch8/set"
+      payload_on: "ON"
+      payload_off: "OFF"
+      state_on: "ON"
+      state_off: "OFF"
+      optimistic: false
+      icon: mdi:power-socket-eu
