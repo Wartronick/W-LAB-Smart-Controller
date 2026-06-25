@@ -90,3 +90,18 @@ And publishes its state feedback so Home Assistant switches stay perfectly in sy
 3. Flash the code to the ESP32 (Requires ESP32 core v2.0.x).
 4. Link your account to Google Home for seamless voice control.
 5. Mount it on your wall and enjoy the clicking sounds of automation!
+
+## 📝 License
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+## 🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📧 Contact
+**Author:** MSc. Alexandre Domingues  
+**GitHub:** [@Wartronick](https://github.com/Wartronick)  
+**Email:** alexandre.mecatronica@hotmail.com
+
+## 🙏 Acknowledgments
+*   **UTFPR** and **LARA Laboratory** for providing resources and support.
+*   The open-source Maker and Home Assistant communities for their excellent tools and inspiration.
